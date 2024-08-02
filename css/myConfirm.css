@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.myConfirm--main{
+    display: flex;
+    margin-top: 70px;
+    height: 700px;
+}
+
+.myConfirm--category {
+	width: 150px;
+	height: 200px;
+}
+
+.myConfirm--myEdit{
+	background: #fdd000;
+}
+
+.myConfirm--myEdit a{
+	color: white;
+	text-decoration: none;
+}
+
+.myConfirm--myMovie, .myConfirm--myProduct, .myConfirm--myStamp, .myConfirm--myEdit {
+	display: flex; 
+	transition-duration: 0.5s;
+	justify-content: center; /* 가로 중앙 정렬 */
+	align-items: center;     /* 세로 중앙 정렬 */
+	height: 50px;
+    min-width: 150px;
+}
+
+.myConfirm--myMovie:hover, .myConfirm--myStamp:hover, .myConfirm--myProduct:hover {
+	background: #fdd000;
+}
+
+.myConfirm--myMovie a, .myConfirm--myStamp a, .myConfirm--myProduct a {
+	transition-duration: 0.5s;
+	color: black;
+	text-decoration: none;
+}
+
+.myConfirm--myMovie:hover a, .myConfirm--myStamp:hover a, .myConfirm--myProduct:hover a {
+	color: white;
+}
+
+.myConfirm--content{
+    margin-left: 50px;
+}
+
+.myConfirm--title{
+    width: 200px;
+}
+
+.myConfirm--confirmbox{
+	position: relative;
+	width: 750px;
+	height: 200px;
+	background: rgba(207, 207, 207, 0.26);
+	text-align: center;
+	margin-top: 60px;
+}
+
+.myConfirm--confirmbox p{
+	position: absolute; 
+	top: 15%; 
+	left: 39%;
+}
+
+.myConfirm--confirmbox form{
+	position: absolute;
+	top: 40%; 
+	left: 30%;
+}
+
+.myConfirm--confirmbox input[type="submit"] {
+	position: absolute;
+    width: 70px;
+	padding: 10px;
+	left: 32%;
+	border: none;
+	border-radius: 10px;
+	background: #fdd000;
+	color: white;
+	transition-duration: 0.5s;
+}
+
+.myConfirm--confirmbox input[type="submit"]:hover{
+	width: 75px;
+	padding: 12px;
+	background: #b9b9b9;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="myEdit--main">
+        <div class="myConfirm--main">
             <div class="myConfirm--category">
                 <div class="myConfirm--myMovie">
                     <a href="myMovie">
@@ -82,39 +82,21 @@
 
             <div style="border: 1px solid rgb(219, 219, 219); margin-left: 50px; height: 200px;"></div>
 
-            <div class="myEdit--content">
-                <div class="myEdit--title">
-                    <h2>회원정보 수정</h2>
+            <div class="myConfirm--content">
+                <div class="myConfirm--title">
+                    <h2>비밀번호 입력</h2>
                     <div style="border: 1px solid rgba(228, 228, 228, 0.664); margin-bottom: 20px;"></div>
                 </div>
-                
-                <div class="myEdit--editbox">
-                    <form>
-                        <label for="name">이름</label>
-                        <input type="text" name="name" id="name" value="배교훈" disabled><br><br>
+
+                <div class="myConfirm--confirmbox">
+                    <p>비밀번호를 입력하세요!</p>
+                    <form action="myEdit" method="POST">
+                    	<label for="password">비밀번호 입력</label>
+                        <input type="password" name="password" id="password" required><br><br>
                         
-                        <label for="id">아이디</label>
-                        <input type="text" name="id" id="id" value="qorygnsska" disabled><br><br>
-                        
-                        <label for="pw">비밀번호</label>
-                        <input type="password" name="pw" id="pw"><br><br>
-                        
-                        <label for="confrimpw">비밀번호 확인</label>
-                        <input type="password" name="confirmpw" id="confrimpw"><br><br>
-                        
-                        <label for="email">이메일</label>
-                        <input type="email" name="email" id="email" value="qorygnsska@naver.com" disabled><br><br>
-                        
-                        <label for="gender">성별</label>
-                        <input type="text" name="gender" id="gender" value="남" disabled><br><br>
-                        
-                        <label for="phone">핸드폰</label>
-                        <input type="text" name="phone" id="phone" value="010-9095-8206" required><br><br>
-                        
-                        <input type="submit" value="수정">
+                        <input type="submit" value="확인">
                     </form>
                 </div>
-
             </div>
 
         </div>
